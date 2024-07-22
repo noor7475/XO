@@ -1,4 +1,4 @@
-* {
+/** {
   box-sizing: border-box;
 }
 
@@ -87,4 +87,94 @@ body {
 
 .game-info {
   margin-left: 20px;
+}*/
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.game-board {
+  flex: 1;
+  padding: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 56px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+}
+
+.status {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.game-info {
+  padding: 20px;
+  border-left: 1px solid #ccc;
+}
+
+.game-info ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.game-info ol li {
+  margin-bottom: 10px;
+}
+
+.game-info ol li button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.game-info ol li button:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+
